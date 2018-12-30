@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+	<meta charset="UTF-8">
+	<title>Строительная фирма | Главная</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row col-sm-12">
+					<div class="col-sm-3">
+						<a class="menu" href="index.html"><img src="img/logo.png" alt="Logo - construction-firm"></a>
+					</div>
+					<div class="col-sm-3">
+						<a class="menu" href="#galery">Галерея</a>
+					</div>
+					<div class="col-sm-3">
+						<a class="menu" href="#footer">Контакты</a>
+					</div>
+					<div class="col-sm-3">
+						<a class="menu" href="#pros">О нас</a>
+					</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="slider-houses">
+		<!-- <div class="container"> -->
+			<div class="row">
+				<div class="col-sm-10 offset-md-1">
+					
+					<div class="wrap">
+					  <div id="arrow-left" class="arrow"></div>
+					  
+					  <div id="slider">
+					    
+					    <div class="slide slide1">
+					      <div class="slide-content">
+					        
+					      </div>
+					    </div>
+					    <div class="slide slide2">
+					      <div class="slide-content">
+					       
+					      </div>
+					    </div>
+					    <div class="slide slide3">
+					      <div class="slide-content">
+					        
+					      </div>
+					    </div>
+					    <div class="slide slide4">
+					      <div class="slide-content">
+					        
+					      </div>
+					    </div>
+					  </div>
+					  
+					  <div id="arrow-right" class="arrow"></div>
+					  
+					  
+					  
+					</div>
+
+				</div>
+			</div>
+		<!-- </div> -->
+	</section>
+
+	<section id="pros"> <h1>Наши преимущества</h1>
+		<div class="continer"> 
+			<div class="row">
+			
+				<div class="col-sm-5 offset-md-2">
+					<div><img id="pros-pic" src="img/house.png" alt="pic"></div>
+					
+				</div>
+
+				<div class="col-sm-5 ">
+					
+					<ul>
+						<li>
+							<p>Доступные цены</p>
+						</li>
+						<li>
+							<p>Лучшее качество</p>
+						</li>
+						<li>
+							<p>Быстрое строительство</p>
+						</li>
+						<li>
+							<p>Выполнение работ точно в срок</p>
+						</li>
+						<li>
+							<p>Можно оставить заявку прямо на сайте</p>
+						</li>
+					</ul>
+
+					<a href="#contacts-section"><button>Оставить заявку</button></a>
+
+			
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id="galery" class="continer"> <h1>Наши проекты</h1>
+		<div class="row">
+			
+			<div class="col-lg-3">
+				<img class="img-fluid" src="img/model1.jpg" alt="project example">
+				<p class="overlay">3 этажа, 300м<sup>2</sup>  3 000 000 ₽</p>
+			</div>
+			<div class="col-lg-3">
+				<img class="img-fluid" src="img/model2.jpg" alt="project example">
+				<p class="overlay">2 этажа, 200м<sup>2</sup> 2 000 000 ₽</p>
+			</div>
+			<div class="col-lg-3">
+				<img class="img-fluid" src="img/model3.jpg" alt="project example">
+				<p class="overlay">3 этажа, 250м<sup>2</sup> 2 500 000 ₽</p>
+			</div>
+			<div class="col-lg-3">
+				<img class="img-fluid" src="img/model4.jpg" alt="project example">
+				<p class="overlay">2 этажа, 150м<sup>2</sup> 2 000 000 ₽</p>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-lg-3">
+				<img class="img-fluid" src="img/model5.jpg" alt="project example">
+				<p class="overlay">2 этажа, 250м<sup>2</sup> 3 000 000 ₽</p>
+			</div>
+			<div class="col-lg-3">
+				<img class="img-fluid" src="img/model6.jpg" alt="project example">
+				<p class="overlay">2 этажа, 200м<sup>2</sup> 2 000 000 ₽</p>
+			</div>
+			<div class="col-lg-3">
+				<img class="img-fluid" src="img/model7.jpg" alt="project example">
+				<p class="overlay">2 этажа, 140м<sup>2</sup> 2 400 000 ₽</p>
+			</div>
+			<div class="col-lg-3">
+				<img class="img-fluid" src="img/model8.jpg" alt="project example">
+				<p class="overlay">2 этажа, 250м<sup>2</sup> 2 500 000 ₽</p>
+			</div>
+		</div>
+	</div>
+
+
+	<section id="contacts-section" >
+		<div class="container"> <h1>Свяжитесь с нами</h1>
+			<div class="row"> 
+
+				<div class="col-lg-2 offset-md-4" >
+
+		<form action="mail.php" method="POST">
+		  <p>E-mail</p>
+		  <input name="email" type="text" />
+		  <br />  <p>ФИО</p>
+		  <input name="name" type="text" />
+		  <br /> <p>Ваша заявка</p>
+		  <textarea name="message" placeholder="Пример заявки: 2 этажа, 140м^2; 2 400 000 ₽; Доп. пожелания" ></textarea>
+		  <br /><br />
+		  <input type="submit" value="Оставить заявку" class="submit" />
+		 </form>
+					
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1673.215267161847!2d49.28879839785484!3d53.53156431086104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1538807058825" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+
+				<div class="col-sm-3 ">
+					<h5>Как нас найти:</h5>
+					<h6>бульвар Курчатова, 16</h6>
+					<h6>1 этаж, офис №9</h6><br>
+					<!-- <h5>В соцсетях:</h5> --> 
+
+				</div>
+				<div class="col-sm-3">
+					<h5>Контакты:</h5>
+					<h6>+7 906 666 66 66</h6>
+					<h6>construction-firm@mail.ru</h6>
+				</div>
+				<div class="col-sm-2">
+					<h5>Карта сайта</h5>
+					<a class="site-map"	href="index.html">Главная</a><br>
+					<a class="site-map"	href="#galery">Галерея</a><br>
+					<a class="site-map"	href="#footer">Контакты</a><br>
+					<a class="site-map"	href="#pros">О нас</a>
+				</div>
+			</div>
+		</div>
+
+	</footer>	
+
+
+<script src="js/script.js"></script>
+<script src="js/bootstrap.min.js"> </script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+
+
+
+
+</body></html>
