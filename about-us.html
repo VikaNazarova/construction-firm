@@ -2,9 +2,11 @@
 <html lang="ru">
 <head> 
 	<meta charset="UTF-8">
-	<title>Строительная фирма | Спасибо</title>
+	<title>Строительная фирма | О нас</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
 </head>
 
@@ -29,25 +31,45 @@
 		</div>
 	</header>
 
+	<div class="container"><h1>О нас: </h1></div>
 
-<section>
-	<div class="container">
-		<div class="row">
-			<div class="thanks col-sm-3 offset-md-4">
-				<h1>Спасибо!</h1>
-				<h5 class="text-center">Ваша заявка отправлена</h5>
-			</div>
-		</div> 
-	</div>
-	<container>
-		<div class="row">
-			<div class="col-sm-6 offset-md-4">
-				<a href="index.html">Вернуться на главную</a>
+	<section id="about-us">
+		<div class="container"> 
+			<div class="row">
+				<div class="col-md-5 offset-xs-1">
+					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque pariatur explicabo placeat ipsam impedit est dolorem, nisi, dolores, sit eveniet soluta omnis sint tempore minus dignissimos asperiores assumenda cupiditate molestias eius, tempora nostrum architecto deserunt! Non est mollitia quisquam. Cupiditate earum nihil alias vitae, quasi aliquid ratione veritatis est commodi.</p>
+				</div>
+				<div class="col-md-5 offset-md-1">
+					<img id="about-pic" src="img/dudes.png" alt="picture of us">
+				</div>
 			</div>
 		</div>
-	</container>
-</section>
-	
+	</section>
+
+
+<section id="contacts-section" >
+		<div class="container"> <h1>Свяжитесь с нами</h1>
+			<div class="row"> 
+
+				<div class="col-lg-2 offset-md-4" >
+
+		<form action="mail.php" method="POST">
+		  <p>E-mail</p>
+		  <input name="email" type="text" />
+		  <br />  <p>ФИО</p>
+		  <input name="name" type="text" />
+		  <br /> <p>Ваша заявка</p>
+		  <textarea name="message" placeholder="Пример заявки: 2 этажа, 140м^2; 2 400 000 ₽; Доп. пожелания" ></textarea>
+		  <br /><br />
+		  <input type="submit" value="Оставить заявку" class="submit" />
+		 </form>
+					
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
 	<footer id="footer">
 		<div class="container">
 			<div class="row">
@@ -78,12 +100,15 @@
 			</div>
 		</div>
 
-	</footer>
+	</footer>	
 
 
-	
+<script src="js/script.js"></script>
 <script src="js/bootstrap.min.js"> </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+
+
 
 
 </body></html>

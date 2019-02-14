@@ -17,7 +17,8 @@ h1{
 	font-family: Segoe UI;
 	font-size: 36px;
 	font-weight: bold;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
+	padding-top: 30px;
 }
 p, input{
 	color: #000000;
@@ -126,6 +127,15 @@ p.overlay{
 	white-space: pre;
 }
 
+.bar{
+	margin: 20px;
+}
+
+.output{
+	background-color: #4ba32f;
+	padding: 20px 20px 30px 20px;
+}
+
 /*slider*/
 body, #slider, .wrap, .slide-content {
   margin: 0;
@@ -188,4 +198,17 @@ body, #slider, .wrap, .slide-content {
 }
 #slider-houses{
 	padding-top:25px;
+}
+
+/* About us page */
+
+#about-pic{
+	height: 320px;
+	width: 540px;
+}
+
+/* Galery page */
+#search-bar{
+	background-color: #4ba32f;
+	padding: 15px;
 }
