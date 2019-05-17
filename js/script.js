@@ -1,3 +1,4 @@
+// slider
 let sliderImages = document.querySelectorAll('.slide'),
     arrowRight = document.querySelector('#arrow-right'),
     arrowLeft = document.querySelector('#arrow-left'),
@@ -49,3 +50,15 @@ arrowRight.addEventListener('click', function(){
 
 
 startSlide();
+
+// calculator
+
+document.getElementById('count').addEventListener('click', function(e){
+  event.preventDefault();
+  let floors = document.getElementById('floors').value;
+  let area = document.getElementById('area').value;
+  if (floors < 0 || area < 0) {
+    alert('Значения не могут быть отрицательными!');
+  }
+  document.getElementById('output').innerHTML = (area * 10000) * (floors/2) +" рублей";
+});

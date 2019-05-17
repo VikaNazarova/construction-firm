@@ -1,6 +1,5 @@
 /* General things */
 header{
-	height: 100hv;
 	background-color: #4ba32f;
 	line-height: 70px;
 }
@@ -9,9 +8,8 @@ a{
 	font-family: Segoe UI;
 	font-size: 24px;
 	font-weight: bold;
-	padding-left: 30px;
 }
-h1{
+h1, h2{
 	text-align: center;
 	color: #0b0c29;
 	font-family: Segoe UI;
@@ -20,14 +18,16 @@ h1{
 	padding-bottom: 20px;
 	padding-top: 30px;
 }
-p, input{
+
+body{
 	color: #000000;
 	font-family: Trebuchet MS;
 	font-size: 20px;
 	font-weight: bold;
+	overflow-x: hidden;
 }
 h5{
-	color: #2375bd;
+	color: #4BA32F;
 	font-family: Segoe UI;
 	font-size: 18px;
 }
@@ -42,6 +42,9 @@ footer{
 }
 section{
 	padding: 50px;
+}
+article {
+	margin: 0 15%; 
 }
 /* Main page */
 
@@ -63,18 +66,14 @@ form{
 	background-color: #4ba32f;
 	text-align: center;
 	height: 400px;
-	width: 350px;
 	padding: 20px;
 }
-textarea{
-	height: 65px;
-	width: 250px;
-}
-.submit, button {
+.submit {
 	height: 50px;
 	width: 200px;
 	background-color: #2375bd;
 	border: solid 2px #0b0c29;
+	border-radius: 0;
 }
 .submit:hover{
 	-webkit-box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.75);
@@ -82,12 +81,12 @@ textarea{
 	box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.75);
 	cursor: pointer;
 }
-button{
+.btn {
 	font-size: 20px;
 	font-weight: bold;
 	font-family: Trebuchet MS;
 }
-button:hover{
+.btn:hover{
 	-webkit-box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.75);
 	-moz-box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.75);
 	box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.75);
@@ -147,7 +146,15 @@ body, #slider, .wrap, .slide-content {
 .wrap {
   position: relative;
 }
-
+.slide-content > div {
+	position: relative;
+	top: 60%;
+	background: rgba(11, 12, 42, 0.5);
+	margin: 0 15%;
+	padding: 15px;
+	color: #fff !important;
+	text-shadow: 4px 4px 3px rgba(11, 12, 42, 1);
+}
 .slide {
   background-size: cover;
   background-position: center;
@@ -200,15 +207,12 @@ body, #slider, .wrap, .slide-content {
 	padding-top:25px;
 }
 
-/* About us page */
+@media (max-width: 720px) {
+	body {
+		text-align: center;
+	}
+	.slide-content > div{
+		top: 20%;
 
-#about-pic{
-	height: 320px;
-	width: 540px;
-}
-
-/* Galery page */
-#search-bar{
-	background-color: #4ba32f;
-	padding: 15px;
+	}
 }
