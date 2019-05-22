@@ -46,6 +46,9 @@ section{
 article {
 	margin: 0 15%; 
 }
+article p {
+	text-indent: 5%;
+}
 /* Main page */
 
 #contacts-section{
